@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/118204758" type="image/x-icon">
+        <title>Document</title>
+        <style>
+            body{
+                height:5000px;
+            }
+
+            #nav-container{
+                margin-top:0px;
+                position:sticky;
+                height:60px;
+                top:8px;
+                /* background-color: red; */
+                /* outline:2px black solid; */
+                font-family:Arial, Helvetica, sans-serif;
+                display: flex;
+                padding: 0px 30px;
+                justify-content: space-between;
+                /* box-shadow:5px 8px 5px grey; */
+                /* border-radius:10px; */
+                border-bottom:2px grey solid;
+                align-items:center;
+            }
+
+            .left-items, .right-items{
+                display: flex;
+                flex-direction: row;
+                align-items:center;
+                gap:5px;
+                cursor:pointer;
+            }
+
+            .left-items:hover, .left-items:focus{
+                color:rgb(134, 156, 156);
+            }
+
+            #left{
+                display:flex;
+                flex-direction: row;
+                flex-wrap:nowrap;
+                gap:35px;
+                font-size:18px;
+                align-items:center;
+            }
+
+            #logo-container:hover{
+                transform: rotate(-5deg);
+            }
+
+            #logo{
+                height:55px;
+            }
+
+            #logo-name{
+                font-size:20px;
+                font-weight:bold;
+                color:black;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+
+            #logo-container{
+                margin-top:0.6%;
+                margin-bottom:0.6%;
+            }
+
+            #carrot{
+                display:block;
+                margin-top:px;
+            }
+
+            #right{
+                display:flex;
+                flex-direction: row;
+                flex-wrap:nowrap;
+                font-size:18px;
+                align-items:center;
+                gap:40px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #light-dark{
+                cursor:default;
+                gap:5px;
+            }
+
+            #button-img{
+                cursor:pointer;
+            }
+
+            #buy-now{
+                outline:2px rgb(141, 136, 136) solid;
+                padding: 5px 10px;
+                border-radius:5px;
+                color:white;
+                background-image: radial-gradient(rgb(43, 92, 43), rgb(42, 156, 42));
+            }
+        </style>
+    </head>
+    <body>
+        <div id="nav-container">
+            <div id="left" class="nav-items">
+                <div id="logo-container" class="left-items">
+                    <img src="./media/logo.svg" alt="Silicon" id="logo">
+                    <div id="logo-name">SILICON</div>
+                </div>
+                <div id="landing" class="left-items">
+                    <div>Landings</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" id="carrot" viewBox="0 0 16 16">
+                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                    </svg>
+                </div>
+                <div id="pages" class="left-items">
+                    <div>Pages</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" id="carrot" viewBox="0 0 16 16">
+                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                    </svg>
+                </div>
+                <div id="account" class="left-items">
+                    <div>Account</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" id="carrot" viewBox="0 0 16 16">
+                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                    </svg>
+                </div>
+                <div id="UI-Kit" class="left-items">UI Kit</div>
+                <div id="docs" class="left-items">Docs</div>
+            </div>
+
+            <div id="right" class="nav-items">
+                <div id="light-dark" class="right-items">
+                    <div  style="color:black;">Light</div>
+                    <img src="./media/button.png" alt="button" id="button-img">
+                    <div style="color:grey">Dark</div>
+                </div>
+                <div id="buy-now" class="right-items">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+                    <div>Buy Now</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

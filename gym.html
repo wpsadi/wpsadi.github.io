@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./assets/dumbell.png" type="image/x-icon">
+        <title>Gym</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+            #nav-container{
+                border-radius:10px;
+                outline: 2px rgb(219, 11, 11) solid;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                height:130px;
+                background-color: black;
+                align-items:center;
+                justify-content:space-between;
+            }
+
+            #gym-logo-container{
+                cursor: pointer;
+                /* filter: invert(); */
+                border-radius:10px;
+                font-family: Poppins;
+                /* height:80px; */
+                width:80px;
+                /* display:flex;
+                flex-direction: column;
+                align-items:center; */
+                /* background-color: red; */
+            }
+
+            #gym-logo{
+                height:50px;
+            }
+
+            #gym-by-line{
+                /* color:white; */
+                color: black
+            }
+
+            #navbar{
+                display:flex;
+                flex-direction:row;
+                gap:10px;
+                border-radius: 10px;
+                align-items:center;
+                height:50px;
+                color:white;
+                cursor:pointer;
+                background-color: rgb(37, 36, 36);
+                outline: 3px solid rgb(134, 121, 121);
+            }
+
+            .navbar-items{
+                padding: 3px 5px;
+            }
+
+            .navbar-items:hover{
+                border-radius:10px;
+                background-color: aqua;
+                color:rgb(49, 44, 44);
+                transition: color,background-color 0.3s ease-in;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav-container">
+            <div id="gym-logo-container">
+                <img src="./assets/two-dumbell.png" alt="dumbells" id="gym-logo">
+                <br>
+                <span id="gym-by-line">My - Gym</span>
+            </div>
+
+            <div id="navbar">
+                <div id="home" class="navbar-items">Home</div>
+                <div id="about" class="navbar-items">About Us</div>
+                <div id="fitness-calculator" class="navbar-items">Fitness Calculator</div>
+                <div id="contact-us" class="navbar-items">Contact Us</div>
+            </div>
+        </div>
+    </body>
+</html>
